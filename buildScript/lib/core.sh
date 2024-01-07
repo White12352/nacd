@@ -10,7 +10,7 @@ git clone -b def https://github.com/xchacha20-poly1305/sing-box.git sing-box
 cd ../..
 git clone -b dev https://github.com/SagerNet/sing sing
 rm -f sing/protocol/http/client.go
-git clone -b dev https://github.com/White12352/sing.git s
+git clone --depth 1 -b dev https://github.com/White12352/sing.git s
 cp -f s/protocol/http/client.go sing/protocol/http
 rm -rf s
 cd sing
